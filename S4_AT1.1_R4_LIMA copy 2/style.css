@@ -1,0 +1,244 @@
+
+/* Estilo geral */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #0b0b12;
+    color: #f5f5f5;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #11101b;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 1px solid #39205b;
+}
+
+header h1 {
+    font-size: 32px;
+    margin: 0;
+    letter-spacing: 3px;
+}
+
+header span,
+footer span {
+    color: #a855f7;
+}
+
+header nav {
+    margin-top: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 12px;
+}
+
+nav a:hover {
+    color: #c084fc;
+}
+
+/* Conteúdo principal */
+main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Banner */
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    background: linear-gradient(135deg, #211333, #10101a);
+    padding: 30px;
+    border-radius: 15px;
+    margin: 25px 0 45px;
+}
+
+.banner div {
+    flex: 1;
+}
+
+.banner h2 {
+    font-size: 36px;
+    line-height: 1.2;
+}
+
+.banner img {
+    width: 48%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* Textos de destaque */
+.destaque {
+    color: #c084fc;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 13px;
+}
+
+.titulo {
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+/* Organização dos produtos */
+#produtos,
+#perifericos,
+#sobre {
+    margin: 45px 0;
+}
+
+.produtos {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Cards */
+.card {
+    flex: 1;
+    min-width: 220px;
+    background-color: #15141f;
+    border: 1px solid #30223f;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: #a855f7;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.card-conteudo {
+    padding: 18px;
+}
+
+.card h3 {
+    color: #d8b4fe;
+}
+
+.preco {
+    color: #c084fc;
+    font-weight: bold;
+}
+
+/* Botões */
+.botao {
+    display: inline-block;
+    background-color: #9333ea;
+    color: white;
+    text-decoration: none;
+    padding: 11px 17px;
+    border-radius: 7px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.botao:hover {
+    background-color: #a855f7;
+}
+
+.suporte {
+    background-color: #30223f;
+}
+
+/* Ficha técnica e montagem */
+.informacoes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin: 45px 0;
+}
+
+.informacoes article {
+    flex: 1;
+    min-width: 250px;
+    background-color: #15141f;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #30223f;
+}
+
+.informacoes h2 {
+    color: #c084fc;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Cards de missão, visão e valores */
+.texto-card {
+    padding: 20px;
+}
+
+/* Contato */
+.contato {
+    text-align: center;
+    background: linear-gradient(135deg, #27133c, #14101e);
+    border-radius: 15px;
+    padding: 35px 20px;
+    margin: 45px 0;
+}
+
+.contato h2 {
+    color: #d8b4fe;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    background-color: #11101b;
+    border-top: 1px solid #39205b;
+    padding: 25px;
+}
+
+/* Ajustes para celulares */
+@media (max-width: 650px) {
+    main {
+        padding: 12px;
+    }
+
+    header nav a {
+        display: inline-block;
+        margin: 5px;
+    }
+
+    .banner {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .banner img {
+        width: 100%;
+        height: auto;
+    }
+
+    .banner h2 {
+        font-size: 28px;
+    }
+
+    .produtos {
+        flex-direction: column;
+    }
+
+    .informacoes {
+        flex-direction: column;
+    }
+}
