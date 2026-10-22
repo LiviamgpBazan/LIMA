@@ -1,0 +1,302 @@
+
+/* CONFIGURAÇÕES GERAIS */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #08070b;
+    color: #eeeeee;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    color: #ffffff;
+}
+
+p {
+    color: #c9c6d0;
+}
+
+a {
+    color: #c084fc;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #e9d5ff;
+}
+
+/* CABEÇALHO */
+header {
+    background-color: #15101d;
+    padding: 25px 8%;
+    text-align: center;
+    border-bottom: 1px solid #30203f;
+}
+
+header h1 {
+    margin: 0;
+    color: #c084fc;
+}
+
+/* MENU */
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    margin: 0 12px;
+    font-weight: bold;
+}
+
+/* CONTEÚDO PRINCIPAL */
+main {
+    width: 90%;
+    max-width: 1280px;
+    margin: 30px auto;
+}
+
+/* BANNER PRINCIPAL */
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 35px;
+    padding: 35px;
+    margin-bottom: 45px;
+    background: linear-gradient(135deg, #170d22, #0d0b12);
+    border-radius: 18px;
+}
+
+.banner div {
+    flex: 1;
+}
+
+.banner img {
+    width: 48%;
+    max-height: 380px;
+    object-fit: cover;
+    border-radius: 14px;
+}
+
+.banner h2 {
+    font-size: 38px;
+    line-height: 1.2;
+}
+
+.banner a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 20px;
+    background-color: #7026a8;
+    color: white;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.banner a:hover {
+    background-color: #8b3bc5;
+}
+
+/* TÍTULOS DAS SEÇÕES */
+section {
+    margin-bottom: 50px;
+}
+
+section h2 {
+    margin-bottom: 25px;
+}
+
+section h3 {
+    color: #d8b4fe;
+}
+
+/* ORGANIZAÇÃO DOS PRODUTOS */
+.produtos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    align-items: flex-start;
+}
+
+/* PRODUTOS SEM QUADRADOS */
+.card {
+    flex: 1 1 280px;
+    min-width: 0;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    overflow: visible;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    background: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+/* IMAGENS DOS PRODUTOS */
+.card img {
+    display: block;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+}
+
+/* TEXTOS DOS PRODUTOS */
+.card-conteudo {
+    padding: 12px 0;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+.card-conteudo h3 {
+    margin-top: 0;
+    margin-bottom: 8px;
+    color: #d8b4fe;
+}
+
+.card-conteudo p {
+    margin: 8px 0;
+}
+
+.card-conteudo ul {
+    padding-left: 20px;
+    color: #c9c6d0;
+}
+
+/* CARDS DE TEXTO SEM QUADRADOS */
+.texto-card {
+    padding: 12px 0;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+/* TABELAS */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #49345a;
+    text-align: left;
+}
+
+th {
+    background-color: #29183a;
+    color: #ffffff;
+}
+
+td {
+    background-color: transparent;
+}
+
+/* INFORMAÇÕES SEM QUADRADOS */
+.informacoes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.informacoes article {
+    flex: 1 1 250px;
+    padding: 18px 0;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+/* CONTATO SEM QUADRADO */
+.contato {
+    padding: 25px 0;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.contato a {
+    color: #c084fc;
+    font-weight: bold;
+}
+
+/* RODAPÉ */
+footer {
+    padding: 25px;
+    background-color: #15101d;
+    border-top: 1px solid #30203f;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* ADAPTAÇÃO PARA CELULAR */
+@media (max-width: 700px) {
+    main {
+        width: 92%;
+    }
+
+    .banner {
+        flex-direction: column;
+        padding: 22px;
+    }
+
+    .banner img {
+        width: 100%;
+        max-height: 280px;
+    }
+
+    .banner h2 {
+        font-size: 29px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px 8px;
+    }
+
+    .produtos {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .card img {
+        height: auto;
+        max-height: 300px;
+    }
+
+    .informacoes {
+        flex-direction: column;
+    }
+
+    table {
+        font-size: 14px;
+    }
+}
+

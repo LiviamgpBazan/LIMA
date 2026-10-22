@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Informações da página para os mecanismos de busca -->
+    <meta name="description" content="Encontre PCs gamers e periféricos na PixelGear.">
+
+    <title>PixelGear | Loja Gamer</title>
+
+    <!-- Fonte personalizada do Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Conexão com o arquivo CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Cabeçalho com o nome da loja e menu de navegação -->
+    <header>
+        <h1>PIXEL<span>GEAR</span></h1>
+        <p>SEU UNIVERSO GAMER COMEÇA AQUI</p>
+
+        <nav aria-label="Menu principal">
+            <a href="#inicio">Início</a>
+            <a href="#produtos">Produtos</a>
+            <a href="#comparacao">Comparação</a>
+            <a href="#perifericos">Periféricos</a>
+            <a href="#sobre">Sobre nós</a>
+        </nav>
+    </header>
+
+    <!-- Conteúdo principal da página -->
+    <main>
+
+        <!-- Banner de apresentação da loja -->
+        <section id="inicio" class="banner">
+            <div>
+                <p class="destaque">LEVEL UP YOUR GAME</p>
+
+                <h2>SEU PRÓXIMO<br>NÍVEL COMEÇA AQUI.</h2>
+
+                <p>Potência, estilo e tecnologia para dominar suas partidas.</p>
+
+                <a class="botao" href="#produtos">EXPLORAR PRODUTOS</a>
+            </div>
+
+            <img
+                src="https://images.unsplash.com/photo-1587202372634-32705e3bf49c?auto=format&fit=crop&w=900&q=85"
+                alt="Computador gamer com gabinete iluminado"
+                width="500">
+        </section>
+
+        <!-- Apresentação dos computadores gamers -->
+        <section id="produtos">
+            <p class="destaque">ESCOLHA SEU EQUIPAMENTO</p>
+            <h2 class="titulo">NOSSOS PCs GAMERS</h2>
+
+            <div class="produtos">
+
+                <!-- Primeiro computador -->
+                <article class="card">
+                    <img
+                        src="https://images.unsplash.com/photo-1593640408182-31c70c8268f5?auto=format&fit=crop&w=700&q=80"
+                        alt="Computador gamer em uma mesa de trabalho"
+                        width="300">
+
+                    <div class="card-conteudo">
+                        <h3>PixelGear Starter</h3>
+                        <p>Ideal para começar no mundo gamer.</p>
+                        <p class="preco">R$ 2.499,00</p>
+                        <a class="botao" href="#comparacao">Ver especificações</a>
+                    </div>
+                </article>
+
+                <!-- Segundo computador -->
+                <article class="card">
+                    <img
+                        src="https://images.unsplash.com/photo-1587202372775-e229f172b9d7?auto=format&fit=crop&w=700&q=80"
+                        alt="Setup gamer com computador e iluminação colorida"
+                        width="300">
+
+                    <div class="card-conteudo">
+                        <h3>PixelGear Pro</h3>
+                        <p>Desempenho para jogos e multitarefas.</p>
+                        <p class="preco">R$ 3.999,00</p>
+                        <a class="botao" href="#comparacao">Ver especificações</a>
+                    </div>
+                </article>
+
+                <!-- Terceiro computador -->
+                <article class="card">
+                    <img
+                        src="https://images.unsplash.com/photo-1591488320449-011701bb6704?auto=format&fit=crop&w=700&q=80"
+                        alt="Computador gamer com componentes de alto desempenho"
+                        width="300">
+
+                    <div class="card-conteudo">
+                        <h3>PixelGear Ultra</h3>
+                        <p>Uma experiência gamer completa.</p>
+                        <p class="preco">R$ 5.499,00</p>
+                        <a class="botao" href="#comparacao">Ver especificações</a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Tabela para comparar preços e especificações dos PCs -->
+        <section id="comparacao">
+            <p class="destaque">COMPARE ANTES DE ESCOLHER</p>
+            <h2 class="titulo">TABELA COMPARATIVA DE PCs</h2>
+
+            <p>
+                Compare as configurações, os recursos e os preços dos computadores
+                para encontrar a opção mais adequada às suas necessidades.
+            </p>
+
+            <div class="tabela-container">
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>Modelo</th>
+                            <th>Processador</th>
+                            <th>Placa de Vídeo</th>
+                            <th>Memória RAM</th>
+                            <th>Preço no PIX</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td><b>PixelGear Starter</b></td>
+                            <td>AMD Ryzen 5 5600G</td>
+                            <td>Radeon integrada</td>
+                            <td>16 GB DDR4</td>
+                            <td>R$ 2.499,00</td>
+                        </tr>
+
+                        <tr>
+                            <td><b>PixelGear Pro</b></td>
+                            <td>AMD Ryzen 5 5600</td>
+                            <td>Radeon RX 6600</td>
+                            <td>16 GB DDR4</td>
+                            <td><strong>R$ 3.999,00</strong></td>
+                        </tr>
+
+                        <tr>
+                            <td><b>PixelGear Ultra</b></td>
+                            <td>AMD Ryzen 7 5700X</td>
+                            <td>GeForce RTX 4060</td>
+                            <td>32 GB DDR4</td>
+                            <td>R$ 5.499,00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p>
+                <strong>Dica:</strong> o Starter é uma opção de entrada.
+                O Pro e o Ultra possuem placas de vídeo dedicadas, indicadas
+                para jogos que exigem mais desempenho gráfico.
+            </p>
+
+            <p class="aviso">
+                Os preços e as configurações são ilustrativos e foram definidos
+                para fins acadêmicos. Não representam ofertas reais.
+            </p>
+        </section>
+
+        <!-- Apresentação dos periféricos em cards -->
+        <section id="perifericos">
+            <p class="destaque">MONTE SEU SETUP</p>
+            <h2 class="titulo">PERIFÉRICOS</h2>
+
+            <div class="produtos">
+
+                <article class="card">
+                    <img
+                        src="https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?auto=format&fit=crop&w=700&q=80"
+                        alt="Teclado de computador gamer"
+                        width="300">
+
+                    <div class="card-conteudo">
+                        <h3>Teclado Gamer</h3>
+                        <p>Precisão para cada comando.</p>
+                        <p class="preco">R$ 149,90</p>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img
+                        src="https://images.unsplash.com/photo-1527814050087-3793815479db?auto=format&fit=crop&w=700&q=80"
+                        alt="Mouse de computador"
+                        width="300">
+
+                    <div class="card-conteudo">
+                        <h3>Mouse Gamer</h3>
+                        <p>Controle e agilidade nas partidas.</p>
+                        <p class="preco">R$ 89,90</p>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img
+                        src="https://images.unsplash.com/photo-1599669454699-248893623440?auto=format&fit=crop&w=700&q=80"
+                        alt="Headset para jogos"
+                        width="300">
+
+                    <div class="card-conteudo">
+                        <h3>Headset Gamer</h3>
+                        <p>Som imersivo para sua gameplay.</p>
+                        <p class="preco">R$ 129,90</p>
+                    </div>
+                </article>
+
+            </div>
+
+            <!-- Tabela com descrições técnicas dos periféricos -->
+            <h3 class="subtitulo">Compare os periféricos</h3>
+
+            <div class="tabela-container">
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>Produto</th>
+                            <th>Tipo</th>
+                            <th>Conexão</th>
+                            <th>Característica</th>
+                            <th>Preço</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td><b>Teclado Gamer</b></td>
+                            <td>Teclado</td>
+                            <td>USB</td>
+                            <td>Iluminação RGB</td>
+                            <td>R$ 149,90</td>
+                        </tr>
+
+                        <tr>
+                            <td><b>Mouse Gamer</b></td>
+                            <td>Mouse</td>
+                            <td>USB</td>
+                            <td>Sensor óptico e DPI ajustável</td>
+                            <td>R$ 89,90</td>
+                        </tr>
+
+                        <tr>
+                            <td><b>Headset Gamer</b></td>
+                            <td>Áudio</td>
+                            <td>P2 ou USB</td>
+                            <td>Microfone integrado</td>
+                            <td>R$ 129,90</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Lista não ordenada de periféricos e recursos -->
+            <h3 class="subtitulo">O que você encontra no nosso setup?</h3>
+
+            <ul>
+                <li>Teclado gamer com iluminação RGB.</li>
+                <li>Mouse com sensor óptico e ajuste de DPI.</li>
+                <li>Headset com microfone integrado.</li>
+            </ul>
+
+            <!-- Lista ordenada com dicas para escolher os equipamentos -->
+            <h3 class="subtitulo">Como escolher seus equipamentos?</h3>
+
+            <ol>
+                <li>Defina seu orçamento.</li>
+                <li>Confira os requisitos dos jogos que deseja jogar.</li>
+                <li>Compare as especificações dos computadores.</li>
+                <li>Escolha os periféricos que atendem às suas necessidades.</li>
+            </ol>
+        </section>
+
+        <!-- Ficha técnica do computador e links de interação -->
+        <section class="informacoes">
+
+            <h2 class="titulo">INFORMAÇÕES DO PRODUTO</h2>
+
+            <article>
+                <h3>Ficha técnica do PixelGear Pro</h3>
+
+                <ul>
+                    <li>Processador: AMD Ryzen 5 5600.</li>
+                    <li>Memória RAM: 16 GB DDR4.</li>
+                    <li>Armazenamento: SSD de 1 TB.</li>
+                    <li>Placa de vídeo: Radeon RX 6600.</li>
+                    <li>Gabinete com iluminação RGB.</li>
+                </ul>
+
+                <!-- Links para compra e atendimento ao cliente -->
+                <p>Gostou do equipamento? Entre em contato para saber mais.</p>
+
+                <a class="botao"
+                    href="https://wa.me/5511999999999"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    COMPRAR PELO WHATSAPP
+                </a>
+
+                <a class="botao suporte"
+                    href="#contato">
+                    ACESSAR SUPORTE
+                </a>
+
+                <p class="aviso">
+                    O número do WhatsApp é ilustrativo e deve ser substituído
+                    por um número válido para atendimento.
+                </p>
+            </article>
+
+            <!-- Lista ordenada com as etapas para organizar o setup -->
+            <article>
+                <h3>Monte seu setup</h3>
+
+                <ol>
+                    <li>Confira os componentes e acessórios.</li>
+                    <li>Posicione o monitor na mesa.</li>
+                    <li>Conecte teclado, mouse e headset.</li>
+                    <li>Conecte os cabos conforme as instruções do fabricante.</li>
+                    <li>Ligue o computador e verifique o funcionamento.</li>
+                </ol>
+            </article>
+
+        </section>
+
+        <!-- Missão, visão e valores da empresa -->
+        <section id="sobre">
+            <p class="destaque">CONHEÇA A PIXELGEAR</p>
+            <h2 class="titulo">MAIS QUE EQUIPAMENTOS</h2>
+
+            <div class="produtos">
+
+                <article class="card texto-card">
+                    <h3>Missão</h3>
+                    <p>Oferecer tecnologia e qualidade para a comunidade gamer.</p>
+                </article>
+
+                <article class="card texto-card">
+                    <h3>Visão</h3>
+                    <p>Ser uma loja reconhecida no universo dos games.</p>
+                </article>
+
+                <article class="card texto-card">
+                    <h3>Valores</h3>
+                    <p>Inovação, respeito, qualidade e compromisso.</p>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Contato, compra e suporte -->
+        <section id="contato" class="contato">
+            <h2>PRONTO PARA SUBIR DE NÍVEL?</h2>
+
+            <p>Entre em contato e conheça nossos equipamentos.</p>
+
+            <a class="botao"
+                href="https://wa.me/5511999999999"
+                target="_blank"
+                rel="noopener noreferrer">
+                FALAR PELO WHATSAPP
+            </a>
+
+            <a class="botao suporte"
+                href="https://support.microsoft.com/pt-br"
+                target="_blank"
+                rel="noopener noreferrer">
+                SUPORTE
+            </a>
+        </section>
+
+    </main>
+
+    <!-- Rodapé com a identificação da loja -->
+    <footer>
+        <h2>PIXEL<span>GEAR</span></h2>
+        <p>Seu universo gamer começa aqui.</p>
+        <p>&copy; 2026 PixelGear eSports Store.</p>
+    </footer>
+
+</body>
+
+</html>

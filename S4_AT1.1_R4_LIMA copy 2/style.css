@@ -1,244 +1,302 @@
 
-/* Estilo geral */
+/* CONFIGURAÇÕES GERAIS */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #0b0b12;
-    color: #f5f5f5;
     margin: 0;
+    padding: 0;
+    background-color: #08070b;
+    color: #eeeeee;
+    font-family: Arial, sans-serif;
     line-height: 1.6;
 }
 
-/* Cabeçalho */
+h1, h2, h3 {
+    color: #ffffff;
+}
+
+p {
+    color: #c9c6d0;
+}
+
+a {
+    color: #c084fc;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #e9d5ff;
+}
+
+/* CABEÇALHO */
 header {
-    background-color: #11101b;
+    background-color: #15101d;
+    padding: 25px 8%;
     text-align: center;
-    padding: 20px;
-    border-bottom: 1px solid #39205b;
+    border-bottom: 1px solid #30203f;
 }
 
 header h1 {
-    font-size: 32px;
     margin: 0;
-    letter-spacing: 3px;
-}
-
-header span,
-footer span {
-    color: #a855f7;
-}
-
-header nav {
-    margin-top: 20px;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 12px;
-}
-
-nav a:hover {
     color: #c084fc;
 }
 
-/* Conteúdo principal */
-main {
-    max-width: 1100px;
-    margin: auto;
-    padding: 20px;
+/* MENU */
+nav {
+    margin-top: 15px;
 }
 
-/* Banner */
+nav a {
+    margin: 0 12px;
+    font-weight: bold;
+}
+
+/* CONTEÚDO PRINCIPAL */
+main {
+    width: 90%;
+    max-width: 1280px;
+    margin: 30px auto;
+}
+
+/* BANNER PRINCIPAL */
 .banner {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 25px;
-    background: linear-gradient(135deg, #211333, #10101a);
-    padding: 30px;
-    border-radius: 15px;
-    margin: 25px 0 45px;
+    gap: 35px;
+    padding: 35px;
+    margin-bottom: 45px;
+    background: linear-gradient(135deg, #170d22, #0d0b12);
+    border-radius: 18px;
 }
 
 .banner div {
     flex: 1;
 }
 
+.banner img {
+    width: 48%;
+    max-height: 380px;
+    object-fit: cover;
+    border-radius: 14px;
+}
+
 .banner h2 {
-    font-size: 36px;
+    font-size: 38px;
     line-height: 1.2;
 }
 
-.banner img {
-    width: 48%;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 12px;
-}
-
-/* Textos de destaque */
-.destaque {
-    color: #c084fc;
+.banner a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 20px;
+    background-color: #7026a8;
+    color: white;
+    border-radius: 8px;
     font-weight: bold;
-    letter-spacing: 2px;
-    font-size: 13px;
 }
 
-.titulo {
-    font-size: 28px;
+.banner a:hover {
+    background-color: #8b3bc5;
+}
+
+/* TÍTULOS DAS SEÇÕES */
+section {
+    margin-bottom: 50px;
+}
+
+section h2 {
     margin-bottom: 25px;
 }
 
-/* Organização dos produtos */
-#produtos,
-#perifericos,
-#sobre {
-    margin: 45px 0;
+section h3 {
+    color: #d8b4fe;
 }
 
+/* ORGANIZAÇÃO DOS PRODUTOS */
 .produtos {
     display: flex;
-    gap: 20px;
     flex-wrap: wrap;
+    gap: 24px;
+    align-items: flex-start;
 }
 
-/* Cards */
+/* PRODUTOS SEM QUADRADOS */
 .card {
-    flex: 1;
-    min-width: 220px;
-    background-color: #15141f;
-    border: 1px solid #30223f;
-    border-radius: 12px;
-    overflow: hidden;
+    flex: 1 1 280px;
+    min-width: 0;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    overflow: visible;
     transition: transform 0.3s;
 }
 
 .card:hover {
     transform: translateY(-5px);
-    border-color: #a855f7;
+    background: transparent;
+    border: none;
+    box-shadow: none;
 }
 
+/* IMAGENS DOS PRODUTOS */
 .card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
     display: block;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
 }
 
+/* TEXTOS DOS PRODUTOS */
 .card-conteudo {
-    padding: 18px;
+    padding: 12px 0;
+    background: transparent;
+    border: none;
+    box-shadow: none;
 }
 
-.card h3 {
+.card-conteudo h3 {
+    margin-top: 0;
+    margin-bottom: 8px;
     color: #d8b4fe;
 }
 
-.preco {
-    color: #c084fc;
-    font-weight: bold;
+.card-conteudo p {
+    margin: 8px 0;
 }
 
-/* Botões */
-.botao {
-    display: inline-block;
-    background-color: #9333ea;
-    color: white;
-    text-decoration: none;
-    padding: 11px 17px;
-    border-radius: 7px;
-    margin-top: 10px;
-    font-weight: bold;
+.card-conteudo ul {
+    padding-left: 20px;
+    color: #c9c6d0;
 }
 
-.botao:hover {
-    background-color: #a855f7;
+/* CARDS DE TEXTO SEM QUADRADOS */
+.texto-card {
+    padding: 12px 0;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
 }
 
-.suporte {
-    background-color: #30223f;
+/* TABELAS */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
 }
 
-/* Ficha técnica e montagem */
+th, td {
+    padding: 12px;
+    border: 1px solid #49345a;
+    text-align: left;
+}
+
+th {
+    background-color: #29183a;
+    color: #ffffff;
+}
+
+td {
+    background-color: transparent;
+}
+
+/* INFORMAÇÕES SEM QUADRADOS */
 .informacoes {
     display: flex;
     flex-wrap: wrap;
     gap: 25px;
-    margin: 45px 0;
 }
 
 .informacoes article {
-    flex: 1;
-    min-width: 250px;
-    background-color: #15141f;
-    padding: 20px;
-    border-radius: 12px;
-    border: 1px solid #30223f;
+    flex: 1 1 250px;
+    padding: 18px 0;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
 }
 
-.informacoes h2 {
-    color: #c084fc;
-}
-
-li {
-    margin-bottom: 10px;
-}
-
-/* Cards de missão, visão e valores */
-.texto-card {
-    padding: 20px;
-}
-
-/* Contato */
+/* CONTATO SEM QUADRADO */
 .contato {
-    text-align: center;
-    background: linear-gradient(135deg, #27133c, #14101e);
-    border-radius: 15px;
-    padding: 35px 20px;
-    margin: 45px 0;
+    padding: 25px 0;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
 }
 
-.contato h2 {
-    color: #d8b4fe;
+.contato a {
+    color: #c084fc;
+    font-weight: bold;
 }
 
-/* Rodapé */
+/* RODAPÉ */
 footer {
-    text-align: center;
-    background-color: #11101b;
-    border-top: 1px solid #39205b;
     padding: 25px;
+    background-color: #15101d;
+    border-top: 1px solid #30203f;
+    text-align: center;
 }
 
-/* Ajustes para celulares */
-@media (max-width: 650px) {
-    main {
-        padding: 12px;
-    }
+footer p {
+    margin: 0;
+}
 
-    header nav a {
-        display: inline-block;
-        margin: 5px;
+/* ADAPTAÇÃO PARA CELULAR */
+@media (max-width: 700px) {
+    main {
+        width: 92%;
     }
 
     .banner {
         flex-direction: column;
-        padding: 20px;
+        padding: 22px;
     }
 
     .banner img {
         width: 100%;
-        height: auto;
+        max-height: 280px;
     }
 
     .banner h2 {
-        font-size: 28px;
+        font-size: 29px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px 8px;
     }
 
     .produtos {
         flex-direction: column;
     }
 
+    .card {
+        width: 100%;
+    }
+
+    .card img {
+        height: auto;
+        max-height: 300px;
+    }
+
     .informacoes {
         flex-direction: column;
     }
+
+    table {
+        font-size: 14px;
+    }
 }
+
